@@ -32,7 +32,7 @@ mongoose
     console.log(err);
   });
 
-const PORT=process.env.PORT||4000;
-if (process.env.NOTE_ENV=="production"){
-  app.use(express.static("client/build"))
+const PORT = process.env.PORT || 4000;
+if ( process.env.NODE_ENV == "production"){
+  app.use(express.static("client/build"));
 }
