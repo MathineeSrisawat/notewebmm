@@ -33,6 +33,6 @@ mongoose
   });
 
 const PORT=process.env.PORT||4000;
-if (process.env.NOTE_ENv=="production"){
+if (process.env.NOTE_ENV=="production"){
   app.use(express.static("client/build"))
 }
